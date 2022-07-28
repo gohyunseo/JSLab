@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul id ="deviceList"><li>smart phone</li><li>tablit</li><li>Wareable watch</li></ul>
+        <h3>change button click</h3>
+        <button onclick="btnFunc()">click here</button>
+        <script>
+            function btnFunc(){
+                var newNode = document.createElement("li");
+                var textNode = document.createTextNode("e-book leader");
+                newNode.appendChild(textNode);
+                var listNode = document.getElementById("deviceList");
+                listNode.replaceChild(newNode,listNode.childNodes[1]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <ul id ="deviceList"><li>smart phone</li><li>tablit</li><li>Wareable watch</li></ul>
+        <h3>delete button click</h3>
+        <button onclick="btnFunc()">click here</button>
+        <script>
+            function btnFunc(){
+                var listNode = document.getElementById("deviceList");
+                listNode.removeChild(listNode.childNodes[0]);
+            }
+        </script>
+    </body>
+</html>

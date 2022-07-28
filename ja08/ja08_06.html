@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>hello!</h3>
+        <h3>welcome</h3>
+        <h3>nice to meet you</h3>
+        <button onclick="changeFunc()">click!</button>
+        <script>
+            function changeFunc(){
+                var x   = document.getElementsByTagName("h3");
+                var i;
+                for(i=0;i<x.length;i++){
+                    x[i].style.backgroundColor = "yellow";
+                }
+            }
+        </script>
+    </body>
+</html>

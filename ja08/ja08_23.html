@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>View Next Node & Back Node on click</h3>
+        <select id="selectList" size="4"><option id="item1">red apple</option><option id="item2">yellow bananas<option id="item3">blue berry</option><option id="item4">shine musket</option></select><br><br>
+        <button onclick="selectFunc()">click here</button>
+        <p id="here1"></p>
+        <p id="here2"></p>
+        <script>
+            function selectFunc(){
+                var x = document.getElementById("item2").nextSibling.innerHTML;
+                document.getElementById("here1").innerHTML=x;
+                var x = document.getElementById("item2").previousSibling.innerHTML;
+                document.getElementById("here2").innerHTML=x;
+                }
+        </script>
+    </body>
+</html>

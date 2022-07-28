@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>hello!</h3>
+        <div id="greeting">
+        <h3>welcome</h3>
+        <h3>nice to meet you</h3>
+        </div>
+        <p id = "here"></p>
+        <script>
+            var x   =   document.getElementById("greeting");
+            var y   =   x.getElementsByTagName("h3");
+            document.getElementById("here").innerHTML = "first title in greeting :" + y[0].innerHTML;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #samDiv{
+                border: 4px solid red;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3> New word Edit on Click</p>
+            <div id = "samDiv">
+                <p>original word</p>
+            </div>
+        <button onclick="btnFunc()">Click here~!</button>
+        <script>
+            function btnFunc(){
+                var newNode = document.element("p");
+                var textNode = document.createTextNode("New word");
+                newNode.appendChild(textNode);
+                document.getElementById("samDiv").appendChild(newNode);
+            }
+        </script>
+    </body>
+</html>

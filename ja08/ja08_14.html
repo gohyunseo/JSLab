@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3> New Button Edit on Click</h3>
+        <button onclick="btnFunc()">Click here~!</button>
+        <script>
+            function btnFunc(){
+                var newNode = document.createElement("button");
+                var textNode    = document.createTextNode("New button");
+                newNode.appendChild(textNode);
+                document.body.appendChild(newNode);
+            }
+        </script>
+    </body>
+</html>

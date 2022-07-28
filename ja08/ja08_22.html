@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>View Dropbox ParentsNode on click</h3>
+        <select id="selectList" size="4"><option>red apple</option><option>yellow bananas<option>blue berry</option><option>shine musket</option></select><br><br>
+        <button onclick="selectFunc()">click here</button>
+        <p id="here"></p>
+        <script>
+            function selectFunc(){
+                var x = document.getElementById("selectList").parentNode.nodeName;
+                document.getElementById("here").innerHTML=x;
+                }
+        </script>
+    </body>
+</html>
